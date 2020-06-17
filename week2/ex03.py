@@ -9,6 +9,8 @@ while (ans != 'c'):
         max = guess
     elif ans == 'l':
         min = guess
+    else:
+        print('Sorry, I did not understand your input.')
     guess = (int)((min + max) / 2)
     print('Is your secret number {}?'.format(guess))
     ans = input("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
